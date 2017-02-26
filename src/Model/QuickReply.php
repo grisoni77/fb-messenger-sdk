@@ -34,7 +34,7 @@ abstract class QuickReply implements \JsonSerializable
     public function jsonSerialize()
     {
         $json = [
-            'type' => $this->type,
+            'content_type' => $this->type,
         ];
 
         return $json;
